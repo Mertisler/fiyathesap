@@ -31,13 +31,6 @@ if (!app) {
 }
 
 app.innerHTML = `
-  <div id="intro-overlay" class="intro-overlay">
-    <div class="intro-content">
-      <img src="/file.jpg" alt="Eryildiz Aluminyum Logo" class="intro-logo" />
-      <div class="intro-title">Eryildiz Aluminyum</div>
-      <div class="intro-subtitle">Sozunde Er Kalitede Yildiz</div>
-    </div>
-  </div>
   <main class="container">
     <h1>Eryildiz Aluminyum Sozunde Er Kalitede Yildiz</h1>
     
@@ -98,21 +91,6 @@ if (
   !multiplierInput
 ) {
   throw new Error('Form elementleri bulunamadi.')
-}
-const introOverlay = document.getElementById('intro-overlay')
-
-if (introOverlay) {
-  requestAnimationFrame(() => {
-    introOverlay.classList.add('show')
-  })
-
-  window.setTimeout(() => {
-    introOverlay.classList.add('hide')
-  }, 2400)
-
-  window.setTimeout(() => {
-    introOverlay.remove()
-  }, 2900)
 }
 
 const getNumber = (id: string): number => Number((document.getElementById(id) as HTMLInputElement).value || 0)
