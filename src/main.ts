@@ -1,5 +1,13 @@
 import './style.css'
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {
+      // Service worker registration failure should not block app usage.
+    })
+  })
+}
+
 type MeasureType = 'net' | 'kanat' | 'cita' | 'conta'
 type OrderType = 'plise' | 'surme'
 type MeasureInput = {

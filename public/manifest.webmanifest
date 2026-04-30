@@ -1,0 +1,19 @@
+{
+  "name": "Eryildiz Fiyat Hesap",
+  "short_name": "Fiyat Hesap",
+  "description": "Plise ve surme siparisleri icin fiyat hesaplama uygulamasi.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/file.jpg",
+      "sizes": "640x640",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
