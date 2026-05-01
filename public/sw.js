@@ -1,5 +1,5 @@
-const CACHE_NAME = 'fiyat-hesap-v2';
-const APP_SHELL = ['/manifest.webmanifest', '/file.jpg'];
+const CACHE_NAME = 'fiyat-hesap-v3';
+const APP_SHELL = ['/', '/manifest.webmanifest', '/icon.svg'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
