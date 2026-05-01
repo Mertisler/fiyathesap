@@ -31,6 +31,9 @@ if (!app) {
 }
 
 app.innerHTML = `
+  <div id="intro-overlay" class="intro-overlay">
+    <div class="intro-slogan">Eryildiz Aluminyum Sozunde Er Kalitede Yildiz</div>
+  </div>
   <main class="container">
     <h1>Eryildiz Aluminyum Sozunde Er Kalitede Yildiz</h1>
     
@@ -91,6 +94,21 @@ if (
   !multiplierInput
 ) {
   throw new Error('Form elementleri bulunamadi.')
+}
+const introOverlay = document.getElementById('intro-overlay')
+
+if (introOverlay) {
+  requestAnimationFrame(() => {
+    introOverlay.classList.add('show')
+  })
+
+  window.setTimeout(() => {
+    introOverlay.classList.add('hide')
+  }, 900)
+
+  window.setTimeout(() => {
+    introOverlay.remove()
+  }, 1300)
 }
 
 const getNumber = (id: string): number => Number((document.getElementById(id) as HTMLInputElement).value || 0)
