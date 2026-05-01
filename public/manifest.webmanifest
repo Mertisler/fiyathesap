@@ -1,5 +1,5 @@
 {
-  "id": "/?pwa=eryildiz-aluminyum-v4",
+  "id": "/?pwa=eryildiz-aluminyum-v3",
   "name": "Eryildiz Aluminyum Sozunde Er Kalitede Yildiz",
   "short_name": "Eryildiz Aluminyum",
   "description": "Plise ve surme siparisleri icin fiyat hesaplama uygulamasi.",
@@ -11,9 +11,9 @@
   "theme_color": "#0f172a",
   "icons": [
     {
-      "src": "/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/splash-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
